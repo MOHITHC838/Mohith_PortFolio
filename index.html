@@ -2,237 +2,238 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>    
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PortFolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <a href="#" class="logo">Portfo<span>lio.</span></a>
-        <ul>
+        <a href="#" class="logo">Portfo<span>lio</span></a>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Project</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
-   <!-- Home Section -->
-<section class="home" id="home">
-    <div class="home-content">
-        <h1>Hi, I'm <span>MOHITH C</span></h1>
-        <h3>Frontend Developer | Fullstack Developer</h3>
-        <p>I'm passionate about creating beautiful, functional websites with modern technologies. With hands-on experience in MERN and Python fullstack web development, I specialize in creating responsive and user-friendly interfaces.</p>
-        <div class="btn-box">
-            <a href="#contact">Hire Me</a>
-            <a href="#about">About Me</a>
-            <a href="https://drive.google.com/file/d/1Jfl_pIKxNv4rc43_6yzJD-C2rb88DxVa/view?usp=drivesdk" download="MohithC_Resume.pdf" class="download-btn">Download CV</a>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>MOHITH C</span></h1>
+            <h3>Frontend Developer | Fullstack Developer</h3>
+            <p>I'm passionate about creating beautiful, functional websites with modern technologies. With hands-on experience in MERN and Python fullstack web development, I specialize in creating responsive and user-friendly interfaces.</p>
+            <div class="btn-box">
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#about" class="btn btn-outline">About Me</a>
+                <a href="https://drive.google.com/file/d/1Jfl_pIKxNv4rc43_6yzJD-C2rb88DxVa/view?usp=drivesdk" download="MohithC_Resume.pdf" class="btn btn-accent">Download CV</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mohith-c-46153b320" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/MOHITHC838" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/917358231435" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </div>
-    </div>
-    <div class="home-sci">
-        <a href="https://www.linkedin.com/in/mohith-c-46153b320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/MOHITHC838"><i class="fab fa-github"></i></a>
-    </div>
-    
-    <!-- 3D floating cubes -->
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-</section>
+
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        
+    </section>
 
     <!-- About Section -->
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="./image/myphoto.jpg" alt="Profile Image">
-        </div>
-        <div class="about-content">
-            <h2>About <span>Me</span></h2>
-            <h3>Frontend Developer|Fullstack Devloper</h3>
-            <p>I'm a passionate frontend developerand Mernstack Devolper  with expertise in HTML, CSS, JavaScript, and modern frameworks like React and node.js. I love creating intuitive user interfaces and My goal is to build applications that are not only functional but also provide user experience.</p>
-            
-            <div class="tab-titles">
-                <p class="active-link" onclick="opentab('experience')">Experience</p>
-                <p onclick="opentab('education')">Education</p>
-                <p onclick="opentab('certifications')">Certifications</p>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="./image/myphoto.jpg" alt="Mohith C">
             </div>
-            
-            <div class="tab-contents active-tab" id="experience">
-                <ul>
-                    <li><span>2023 - 2024</span><br>Frontend Developer at WebSolutions</li>             
-                    <li><span>2024 - 2025</span><br>Web Designer in Own Startup</li>
-                    <li><span>2025 - Current</span><br>Junior Developer at Startup Inc</li>
-                </ul>
-            </div>
-            
-            <div class="tab-contents" id="education">
-                <ul>
-                    <li><span>2022 - 2024</span><br>Our 11th and 12th in - Goverment Highersecondary</li>
-                    <li><span>2024 - 2027</span><br>B.SC Computer Science in -KG college arts and  science</li>
-                  
-                </ul>
-            </div>
-            
-            <div class="tab-contents" id="certifications">
-                <ul>
-                    <li><span>2022</span><br>Advanced React Certification</li>
-                    <li><span>2021</span><br>Html and Css Fronten Certification</li>
-                    <li><span>2020</span><br> Python backend Development Course</li>
-                </ul>
+            <div class="about-content">
+                <h3>Frontend Developer | Fullstack Developer</h3>
+                <p>I'm a passionate frontend developer and MERN stack and PYTHON developer with expertise in HTML, CSS, JavaScript, and modern frameworks like React and Node.js. I love creating intuitive user interfaces and my goal is to build applications that are not only functional but also provide an exceptional user experience.</p>
+                
+                <div class="tab-titles">
+                    <button class="tab-btn active" data-tab="experience">Experience</button>
+                    <button class="tab-btn" data-tab="education">Education</button>
+                    <button class="tab-btn" data-tab="certifications">Certifications</button>
+                </div>
+                
+                <div class="tab-content active" id="experience">
+                    <ul>
+                        <li><span>2023 - 2024</span><br>Frontend Developer at WebSolutions</li>
+                        <li><span>2024 - 2025</span><br>Web Designer in Own Startup</li>
+                        <li><span>2025 - Current</span><br>Junior Developer at Startup Inc</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>2022 - 2024</span><br>11th and 12th in Government Higher Secondary</li>
+                        <li><span>2024 - 2027</span><br>B.SC Computer Science in KG College of Arts and Science</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="certifications">
+                    <ul>
+                        <li><span>2023</span><br>Advanced React Certification</li>
+                        <li><span>2025</span><br>HTML and CSS Frontend Certification</li>
+                        <li><span>2024</span><br>Python Backend Development Course</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
-        <h2>My <span>Skills</span></h2>
+        <h2 class="section-title">My <span>Skills</span></h2>
         <div class="skills-container">
             <div class="skill-card">
                 <i class="fab fa-html5"></i>
                 <h3>HTML5</h3>
-                <p>Semantic markup, accessibility standards, and modern HTML5 APIs. Experience with templating engines like Pug.</p>
+                <p>Semantic markup, accessibility standards, and modern HTML5 APIs.</p>
             </div>
             <div class="skill-card">
                 <i class="fab fa-css3-alt"></i>
                 <h3>CSS3</h3>
-                <p>Advanced CSS techniques including Flexbox, Grid, animations, and transitions. Proficient with preprocessors like SASS.</p>
+                <p>Advanced CSS techniques including Flexbox, Grid, animations, and transitions.</p>
             </div>
             <div class="skill-card">
                 <i class="fab fa-js"></i>
                 <h3>JavaScript</h3>
-                <p>ES6+ features, functional programming, asynchronous JavaScript. Experience with TypeScript.</p>
+                <p>ES6+ features, functional programming, asynchronous JavaScript.</p>
             </div>
             <div class="skill-card">
                 <i class="fab fa-react"></i>
                 <h3>React</h3>
-                <p>Building component-based UIs, hooks, context API, Redux for state management, and Next.js for SSR.</p>
+                <p>Building component-based UIs, hooks, context API, and state management.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node-js"></i>
+                <h3>Node.js</h3>
+                <p>Server-side JavaScript with Express.js, REST API development.</p>
             </div>
             <div class="skill-card">
                 <i class="fab fa-python"></i>
                 <h3>Python</h3>
-                <p>Python 3 with experience in Django, Flask, data analysis (Pandas, NumPy), and automation scripts. Knowledge of OOP principles and PEP8 standards.</p>
+                <p>Python 3 with experience in Django, Flask, and data analysis.</p>
             </div>
-            
-            <div class="skill-card">
-                <i class="fab fa-node-js"></i>
-                <h3>Node.js</h3>
-                <p>Server-side JavaScript with Express.js, REST API development, authentication (JWT, OAuth), and real-time applications with Socket.io. Experience with npm ecosystem.</p>
-            </div>
-            
-            <div class="skill-card">
-                <i class="fab fa-bootstrap"></i>
-                <h3>Bootstrap</h3>
-                <p>Bootstrap 5 for responsive web design, grid system, components customization, and utility classes. Experience with theming and extending Bootstrap with SASS.</p>
-            </div>
-            
             <div class="skill-card">
                 <i class="fas fa-database"></i>
                 <h3>MongoDB</h3>
-                <p>NoSQL database with Mongoose ODM, CRUD operations, aggregation pipeline, indexing, and data modeling. Experience with Atlas cloud service and database optimization.</p>
+                <p>NoSQL database with Mongoose ODM, CRUD operations.</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-mobile-alt"></i>
                 <h3>Responsive Design</h3>
-                <p>Creating websites that work perfectly on all devices using media queries, flexible layouts, and mobile-first approach.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-node-js"></i> <!-- Using Node.js icon since Express is a Node framework -->
-                <h3>Express.js</h3>
-                <p>Proficient in creating scalable backend services with Express.js, including JWT authentication, rate limiting, API documentation with Swagger, and integration with various databases.</p>
+                <p>Creating websites that work perfectly on all devices.</p>
             </div>
         </div>
     </section>
-    <!-- project section -->
 
     <!-- Projects Section -->
-<section class="projects" id="projects">
-    <h2>My <span>Projects</span></h2>
-    <div class="projects-container">
-        <!-- Project 1 - E-commerce -->
-        <div class="project-card">
-            <div class="project-img">
-                <img src="https://plus.unsplash.com/premium_photo-1684785618727-378a3a5e91c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZWNvbW1lcmNlfGVufDB8fDB8fHww" alt="E-Commerce Project">
-                <div class="project-links">
-                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+    <section class="projects" id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="E-Commerce Project">
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce</h3>
+                    <p>This project is a basic e-commerce website built using MERN stack. It allows users to browse products, view details, and simulate the shopping experience in a clean and responsive layout.</p>
+                    <div class="project-tech">
+                        <span>MongoDB</span>
+                        <span>Express</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
                 </div>
             </div>
-            <div class="project-info">
-                <h3>E-commerce</h3>
-                <p>This project is a basic e-commerce website built using MERN stack (optionally extendable with backend, and database). It allows users to browse products, view details, and simulate the shopping experience in a clean and responsive layout.</p>
-                <div class="project-tech">
-                    <span>MongoDB</span>
-                    <span>Express</span>
-                    <span>React</span>
-                    <span>Node.js</span>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Task Manager Project">
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Task Manager</h3>
+                    <p>Developed a web-based task management platform with separate dashboards for teachers and students. Teachers can create, assign, and track tasks, while students can view and submit their work.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Python Flask</span>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Project 2 - Task Manager -->
-        <div class="project-card">
-            <div class="project-img">
-                <img src="../image/manager.png" alt="Task Manager Project">
-                <div class="project-links">
-                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <div class="project-info">
-                <h3>Task Manager</h3>
-                <p>Developed a web-based task management platform with separate dashboards for teachers and students. Teachers can create, assign, and track tasks, while students can view and submit their work.</p>
-                <div class="project-tech">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                    <span>Python Flask</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <!-- Contact Section -->
+    
+<!-- Contact Section -->
 <section class="contact" id="contact">
-    <h2>Contact <span>Me</span></h2>
+    <h2 class="section-title">Contact <span>Me</span></h2>
     <div class="contact-container">
-        <div class="contact-left">
-            <p><i class="fas fa-paper-plane"></i> mrcmsmohith04@gmail.com</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> mrcmsmohith04@gmail.com</p>
             <p><i class="fas fa-phone"></i> +91 7358231435</p>
             <p><i class="fas fa-map-marker-alt"></i> TamilNadu, Coimbatore City</p>
-            
-            <div class="social-icons">
+            <div class="contact-social">
                 <a href="https://www.linkedin.com/in/mohith-c-46153b320" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/MOHITHC838" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://wa.me/917358231435" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
-        <div class="contact-right">
-            <form id="contactForm" onsubmit="sendWhatsAppMessage(); return false;">
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
                 <input type="text" name="name" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
                 <input type="email" name="email" id="email" placeholder="Your Email" required>
-                
-                <div class="inquiry-types">
-                    <label><input type="radio" name="inquiry" value="Freelancing" required> Freelancing</label>
-                    <label><input type="radio" name="inquiry" value="Project Work"> Project Work</label>
-                    <label><input type="radio" name="inquiry" value="Job Opportunity"> Job Opportunity</label>
-                    <label><input type="radio" name="inquiry" value="Other"> Other</label>
-                </div>
-                
-                <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send via WhatsApp</button>
-            </form>
-        </div>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" id="phone" placeholder="Your WhatsApp Number (optional)">
+            </div>
+            <div class="inquiry-types">
+                <label class="inquiry-option">
+                    <input type="radio" name="inquiry" value="Freelancing" required> Freelancing
+                </label>
+                <label class="inquiry-option">
+                    <input type="radio" name="inquiry" value="Project Work"> Project Work
+                </label>
+                <label class="inquiry-option">
+                    <input type="radio" name="inquiry" value="Job Opportunity"> Job Opportunity
+                </label>
+                <label class="inquiry-option">
+                    <input type="radio" name="inquiry" value="Other"> Other
+                </label>
+            </div>
+            <div class="form-group">
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="button" class="btn" onclick="sendToWhatsApp()">Send via WhatsApp</button>
+        </form>
     </div>
 </section>
-
-    <script src="./script.js">
-        
+    <script src="./script.js"> 
     </script>
 </body>
 </html>
